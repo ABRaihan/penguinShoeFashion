@@ -87,8 +87,16 @@ footer input{
     border: none !important;
     height: 40px !important;
 }
+footer input:focus{
+    border: none !important;
+    box-shadow: none !important;
+
+}
 footer .subscribeBtn{
     background-color: #F87348;
+}
+footer .subscribeBtn:hover{
+    background-color: #f84b11 !important;
 }
 
 
