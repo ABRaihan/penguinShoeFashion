@@ -5,14 +5,14 @@
 }
 /* Global Style */
 .customButton{
-    padding: 15px 25px;
-    border-radius: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
     font-weight: bold;
     background-color: #2F43C0;
 }
 .price{
     color: #F87348;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }
 .productImg{
@@ -44,26 +44,20 @@ nav .logo img{
 .serviceIcon img{
     width: 50px;
 }
+#service .serviceText{
+    max-width: 300px;
+    margin: 0 auto;
+}
 
 
 /* Media Query */
     /* Large Devices */
 @media only screen and (min-width:992px){
-    .price{
-        font-size: 20px;
-    }
-    .customButton{
-        padding: 10px 15px;
-    }
     /* Service Section */
-    #service .serviceText{
-        max-width: 400px;
-    }
     #service .serviceItem{
         text-align: left !important;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
     }
 }
