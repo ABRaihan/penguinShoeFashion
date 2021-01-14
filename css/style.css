@@ -30,7 +30,6 @@ h3{
     font-weight: bold;
 }
 p{font-family: 'Mukta Malar', sans-serif;font-size: 18px;}
-a{font-size: 20px;font-family: 'Mukta Malar', sans-serif;}
 
 /* Header Section */
 header{
@@ -38,6 +37,11 @@ header{
     padding: 20px 60px;
 }
 header .logo img{width: 180px;}
+header nav a{
+    color: black;
+    font-size: 20px;
+    font-family: 'Mukta Malar', sans-serif;
+}
 header nav li:hover a{color: #F87348 !important;}
 .bannerText h1{
     font-size: 50px;
@@ -46,12 +50,10 @@ header nav li:hover a{color: #F87348 !important;}
 }
 .bannerText .textHighlight{color: #F87348;}
 /* Service Section */
-.serviceIcon img{width: 50px;}
+#service .serviceIcon img{width: 50px;}
 #service .serviceText{max-width: 300px;margin: 0 auto;}
 /* Footer Section */
-footer{
-    background-color: #2F334D;
-}
+footer{background-color: #2F334D;}
 footer h3{
     position: relative;
     margin-bottom: 20px;
@@ -64,15 +66,11 @@ footer h3::after{
     background-color: #F87348;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
 }
-footer h3,footer p,footer i,footer a{
-    color: white;
-}
-footer a:hover, footer a:hover i{
-    color: #F87348;
-}
+footer h3,footer p,footer i,footer a{color: white;}
+footer a:hover, footer a:hover i{color: #F87348;}
 footer .inputIcon{
     background-color: white;
     border: none;
@@ -80,9 +78,7 @@ footer .inputIcon{
     width: 40px;
     border-radius: 5px 0 0 5px;
 }
-footer .inputIcon i{
-    color: #F87348;
-}
+footer .inputIcon i{color: #F87348;}
 footer input{
     border: none !important;
     height: 40px !important;
@@ -90,20 +86,14 @@ footer input{
 footer input:focus{
     border: none !important;
     box-shadow: none !important;
-
 }
-footer .subscribeBtn{
-    background-color: #F87348;
-}
-footer .subscribeBtn:hover{
-    background-color: #f84b11 !important;
-}
+footer .subscribeBtn{background-color: #F87348;}
+footer .subscribeBtn:hover{background-color: #f84b11 !important;}
 
 
 /* Media Query */
     /* Large Devices */
 @media only screen and (min-width:992px){
-
     /* Header Section */
     header .logo img{width: 250px;}
     /* Service Section */
