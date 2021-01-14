@@ -7,7 +7,6 @@
 .customButton{
     padding: 10px 15px;
     border-radius: 8px;
-    font-weight: bold;
     background-color: #2F43C0;
 }
 .price{
@@ -19,45 +18,95 @@
     background-color: rgba(128, 128, 128, 0.103);
     border-radius: 15px;
 }
-
-.cartStyle{
-    border-radius: 15px;
+.categoryName{
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
 }
+.cartStyle{border-radius: 15px;}
 h3{
     font-size: 25px;
     color: #2F334D;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
 }
+p{font-family: 'Mukta Malar', sans-serif;font-size: 18px;}
+a{font-size: 20px;font-family: 'Mukta Malar', sans-serif;}
+
 /* Header Section */
-    /* Navigation bar */
-nav .logo img{
-    width: 300px;
+header{
+    background-color: #fae1dd5d;
+    padding: 20px 60px;
 }
-/* Main Section */
-.mainContentText h1{
+header .logo img{width: 180px;}
+header nav li:hover a{color: #F87348 !important;}
+.bannerText h1{
     font-size: 50px;
     color: #2F334D;
+    font-family: 'Fugaz One', cursive;
 }
-.mainContentText .textHighlight{
+.bannerText .textHighlight{color: #F87348;}
+/* Service Section */
+.serviceIcon img{width: 50px;}
+#service .serviceText{max-width: 300px;margin: 0 auto;}
+/* Footer Section */
+footer{
+    background-color: #2F334D;
+}
+footer h3{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+footer h3::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #F87348;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer h3,footer p,footer i,footer a{
+    color: white;
+}
+footer a:hover, footer a:hover i{
     color: #F87348;
 }
-/* Service Section */
-.serviceIcon img{
-    width: 50px;
+footer .inputIcon{
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px 0 0 5px;
 }
-#service .serviceText{
-    max-width: 300px;
-    margin: 0 auto;
+footer .inputIcon i{
+    color: #F87348;
+}
+footer input{
+    border: none !important;
+    height: 40px !important;
+}
+footer .subscribeBtn{
+    background-color: #F87348;
 }
 
 
 /* Media Query */
     /* Large Devices */
 @media only screen and (min-width:992px){
+
+    /* Header Section */
+    header .logo img{width: 250px;}
     /* Service Section */
     #service .serviceItem{
         text-align: left !important;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    /* Footer Section */
+    footer .subscribeForm{
+        width: 100% !important;
     }
 }

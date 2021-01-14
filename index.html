@@ -10,6 +10,10 @@
     <!-- Font Awesome Icon -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Fugaz+One&family=Mukta+Malar&display=swap"
+        rel="stylesheet">
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,12 +23,13 @@
     <header>
         <div class="container">
             <!-- Navigation Bar -->
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light mb-5">
                 <a class="navbar-brand logo" href="#">
-                    <img src="images/logo,icon/Logo.png" alt="">
+                    <img class="img-fluid" src="images/logo,icon/Logo.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarShow">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarShow">
+                    <i style="color:black;font-size:25px;" class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarShow">
                     <ul class="navbar-nav ms-auto">
@@ -43,16 +48,13 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-    </header>
-    <!-- Main Section -->
-    <main class="my-5">
-        <div class="container">
-            <div class="row gx-5 justify-content-lg-between">
+            <!-- Banner Image and Text -->
+            <div class="row gx-5 justify-content-lg-between align-items-center my-lg-5">
                 <div class="col-12 col-lg-5 order-lg-1">
-                    <div class="mainContentText">
+                    <div class="bannerText">
                         <h1><span class="textHighlight">NIKE REACT </span><br /> INFINITY RUN 2</h1>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sequi!</p>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, sequi!
+                        </p>
                         <a class="btn btn-primary customButton" href="#"><i class="fas fa-shopping-cart me-2"></i>BUY
                             NOW</a>
                     </div>
@@ -64,19 +66,19 @@
                 </div>
             </div>
         </div>
-    </main>
+    </header>
     <!-- Casual Shoe Section -->
-    <section class="my-5">
+    <section>
         <div class="container">
             <div class="row">
-                <h2 class="text-center my-5 text-lg-start">CASUAL SHOES</h2>
+                <h2 class="text-center my-5 text-lg-start categoryName">CASUAL SHOES</h2>
                 <div class="col-12 col-lg-4">
                     <div class="card p-3 shadow border-0 mb-4 cartStyle">
                         <div class="productImg">
                             <img class="img-fluid card-img-top" src="images/product/casualShoe1.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Nike Shoe</h3>
+                            <h3 class="card-title">Nike Air</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
                                 voluptas!</p>
                             <div class="d-flex align-items-center justify-content-between">
@@ -93,11 +95,11 @@
                             <img class="img-fluid card-img-top" src="images/product/casualShoe2.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Nike Shoe</h3>
+                            <h3 class="card-title">Sneakers Skate</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
                                 voluptas!</p>
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="price">$234</span>
+                                <span class="price">$275</span>
                                 <a class="btn btn-primary customButton" href="#"><i
                                         class="fas fa-shopping-cart me-2"></i>BUY NOW</a>
                             </div>
@@ -110,11 +112,11 @@
                             <img class="img-fluid card-img-top" src="images/product/casualShoe3.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Nike Shoe</h3>
+                            <h3 class="card-title">Sneakers Basketball</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
                                 voluptas!</p>
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="price">$234</span>
+                                <span class="price">$350</span>
                                 <a class="btn btn-primary customButton" href="#"><i
                                         class="fas fa-shopping-cart me-2"></i>BUY NOW</a>
                             </div>
@@ -125,15 +127,15 @@
         </div>
     </section>
     <!-- Formal Shoe Section -->
-    <section class="my-5">
+    <section>
         <div class="container">
             <div class="row">
-                <h2 class="text-center text-lg-start my-5">FORMAL SHOES</h2>
+                <h2 class="text-center text-lg-start my-5 categoryName">FORMAL SHOES</h2>
                 <div class="col-12 col-lg-4">
                     <div class="card p-3 shadow border-0 mb-4 cartStyle">
                         <img class="img-fluid card-img-top" src="images/product/formalShoe1.png" alt="">
                         <div class="card-body">
-                            <h3 class="card-title">Prestige High-Cut Leather</h3>
+                            <h3 class="card-title">Prestige High-Cut</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
                                 molestiae?</p>
                             <div class="d-flex align-items-center justify-content-between">
@@ -148,11 +150,11 @@
                     <div class="card p-3 shadow border-0 mb-4 cartStyle">
                         <img class="img-fluid card-img-top" src="images/product/formalShoe2.png" alt="">
                         <div class="card-body">
-                            <h3 class="card-title">Prestige High-Cut Leather</h3>
+                            <h3 class="card-title">Slip-On Formal</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
                                 molestiae?</p>
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="price">$234</span>
+                                <span class="price">$300</span>
                                 <a class="btn btn-primary customButton" href="#"><i
                                         class="fas fa-shopping-cart me-2"></i>BUY NOW</a>
                             </div>
@@ -163,11 +165,11 @@
                     <div class="card p-3 shadow border-0 mb-4 cartStyle">
                         <img class="img-fluid card-img-top" src="images/product/formalShoe3.png" alt="">
                         <div class="card-body">
-                            <h3 class="card-title">Prestige High-Cut Leather</h3>
+                            <h3 class="card-title">Single Buckle</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
                                 molestiae?</p>
                             <div class="d-flex align-items-center justify-content-between">
-                                <span class="price">$234</span>
+                                <span class="price">$250</span>
                                 <a class="btn btn-primary customButton" href="#"><i
                                         class="fas fa-shopping-cart me-2"></i>BUY NOW</a>
                             </div>
@@ -181,7 +183,7 @@
     <section id="service" class="my-5">
         <div class="container">
             <div class="row px-3 gx-5">
-                <div class="col-12 col-lg-6 order-lg-1 my-4">
+                <div class="col-12 col-lg-6 order-lg-1 my-4 m-lg-0">
                     <img class="img-fluid" src="images/logo,icon/XMLID 1.png" alt="">
                 </div>
                 <div class="col-12 col-lg-6 order-lg-0">
@@ -218,6 +220,67 @@
             </div>
         </div>
     </section>
+    <!-- Footer Section -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row px-3">
+                <!-- Contact Us -->
+                <div class="col-12 col-lg-3 text-center mt-5">
+                    <div>
+                        <h3>Contact Us</h3>
+                        <div>
+                            <span><i class="fas fa-mobile-alt me-2"></i></span>
+                            <p class="d-inline-block m-0">+91 9999 999 999</p>
+                        </div>
+                        <div>
+                            <span><i class="fas fa-phone me-2"></i></span>
+                            <p class="d-inline-block m-0">+44 4568 999 999</p>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Information -->
+                <div class="col-12 col-lg-3 text-center mt-5">
+                    <h3>Information</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">More Search </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Quick Link -->
+                <div class="col-12 col-lg-3 text-center mt-5">
+                    <h3>Quick Links</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Supports</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Terms & Condition</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Subscribes -->
+                <div class="col-12 col-lg-3 text-center mt-5">
+                    <p>Subscribes More Info</p>
+                    <form action="">
+                        <div class="input-group w-50 mx-auto subscribeForm">
+                            <span class="input-group-text inputIcon"><i class="fas fa-envelope-open"></i></span>
+                            <input class="form-control" type="email" placeholder="Enter Your Email">
+                        </div>
+                        <input class="btn btn-warning text-white mt-4 subscribeBtn" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Bootstrap JS File -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
